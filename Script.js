@@ -97,6 +97,7 @@ window.onload = function () {
 			}
 			if (state == 1.1) {							//状態４．１ 移動状態
 				zoyamaImg.x += 10;
+			}
 			if (state == 2) {							//ゲームスタート　状態１
 				zoyamaImg.y = Math.random() * 400;			//ｙ座標の位置をランダムに決定
 				state = 2.1;
