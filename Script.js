@@ -68,11 +68,11 @@ window.onload = function () {
 			//ポイントによって状態Stateを変更する
 			if (point < 3) {
 				state = 1;
-			} else if (point < 6) {
-				state = 2;
 			} else if (point < 9) {
+				state = 2;
+			} else if (point < 16) {
 				state = 3;
-			} else if (point < 13) {
+			} else if (point < 25) {
 				state = 4;
 			} else {
 				state = 5;
@@ -110,21 +110,21 @@ window.onload = function () {
 				state = 3.1;
 			}
 			if (state == 3.1) {							//状態４．１ 移動状態
-				zoyamaImg.x += 30;
+				zoyamaImg.x += 27;
 			}
 			if (state == 4) {							//ゲームスタート　状態１
 				zoyamaImg.y = Math.random() * 400;			//ｙ座標の位置をランダムに決定
 				state = 4.1;
 			}
 			if (state == 4.1) {							//状態４．１ 移動状態
-				zoyamaImg.x += 35;
+				zoyamaImg.x += 32;
 			}
 			if (state == 5) {							//ゲームスタート　状態１
 				zoyamaImg.y = Math.random() * 400;			//ｙ座標の位置をランダムに決定
 				state = 5.1;
 			}
 			if (state == 5.1) {							//状態４．１ 移動状態
-				zoyamaImg.x += 40;
+				zoyamaImg.x += 36;
 			}
 
 			//現在のテキスト表示
